@@ -69,7 +69,7 @@ export const RoutesView = createRoutesView({
 export const router = createHistoryRouter({
   routes,
   controls: routerControls,
-  base: "",
+  base: "/sbrmsh",
 });
 
 const history = createBrowserHistory();
