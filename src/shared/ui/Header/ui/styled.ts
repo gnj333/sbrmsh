@@ -19,22 +19,19 @@ export const RootStyled = styled.div`
 `;
 
 export const HeaderWrapper = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    padding: 30px 0 30px 30px;
-    background-color: ${theme.colors.purewhite};
-    border-radius: ${theme.borderRadius};
-}
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 30px 50px 30px 50px;
+  background-color: white;
 `;
 
 export const NumberAndAddress = styled.div`
   display: flex;
   gap: 40px;
-  margin-left: 30px;
   align-items: center;
 `;
 

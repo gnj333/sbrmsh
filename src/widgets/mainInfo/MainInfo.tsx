@@ -3,6 +3,7 @@ import {
   ControllersPicture,
   ControllersPictureWrapper,
   ControllersWrapper,
+  GrayWrapper,
   MainInfoWrapper,
   Title,
   TitleAndButtonWrapper,
@@ -15,24 +16,26 @@ import Controller from "../../shared/assets/controller.png";
 
 export const MainInfo = () => (
   <MainInfoWrapper>
-    <ControllersWrapper>
-      <ControllersPictureWrapper>
-        <ControllersPicture src={Controller} />
-        <ControllersPicture src={Controller} />
-        <ControllersPicture src={Controller} />
-        <ControllersPicture src={Controller} />
-      </ControllersPictureWrapper>
-    </ControllersWrapper>
-    <TitleAndButtonWrapper>
-      <Title>
-        ПРОИЗВОДИМ
-        <br /> ПРОГРАММИРУЕМЫЕ
-        <br /> ЛОГИЧЕСКИЕ КОНТРОЛЛЕРЫ
-      </Title>
-      <ButtonWrapper>
-        <Button>В КАТАЛОГ</Button>
-      </ButtonWrapper>
-    </TitleAndButtonWrapper>
+    <GrayWrapper>
+      <ControllersWrapper>
+        <ControllersPictureWrapper>
+          <ControllersPicture src={Controller} />
+          <ControllersPicture src={Controller} />
+          <ControllersPicture src={Controller} />
+          <ControllersPicture src={Controller} />
+        </ControllersPictureWrapper>
+      </ControllersWrapper>
+      <TitleAndButtonWrapper>
+        <Title>
+          ПРОИЗВОДИМ
+          <br /> ПРОГРАММИРУЕМЫЕ
+          <br /> ЛОГИЧЕСКИЕ КОНТРОЛЛЕРЫ
+        </Title>
+        <ButtonWrapper>
+          <Button>В КАТАЛОГ</Button>
+        </ButtonWrapper>
+      </TitleAndButtonWrapper>
+    </GrayWrapper>
     <AboutUs />
     <Advantages />
     <Modules />
