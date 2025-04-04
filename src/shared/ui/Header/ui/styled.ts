@@ -6,7 +6,7 @@ export const RootStyled = styled.div`
     top: 0;
     z-index: 10;
     background-color: white;
-    width: 101%;
+    width: 100%;
 
     &:after {
         top: 0;
