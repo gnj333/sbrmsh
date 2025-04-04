@@ -11,15 +11,16 @@ import { Button } from "../../shared/ui/Button.tsx";
 import { AboutUs } from "../aboutUs/AboutUs";
 import { Advantages } from "../advantages/Advantages";
 import { Modules } from "../modules/ui/Modules";
+import Controller from "../../shared/assets/controller.png";
 
 export const MainInfo = () => (
   <MainInfoWrapper>
     <ControllersWrapper>
       <ControllersPictureWrapper>
-        <ControllersPicture src={"/assets/controller.png"} />
-        <ControllersPicture src={"/assets/controller.png"} />
-        <ControllersPicture src={"/assets/controller.png"} />
-        <ControllersPicture src={"/assets/controller.png"} />
+        <ControllersPicture src={Controller} />
+        <ControllersPicture src={Controller} />
+        <ControllersPicture src={Controller} />
+        <ControllersPicture src={Controller} />
       </ControllersPictureWrapper>
     </ControllersWrapper>
     <TitleAndButtonWrapper>

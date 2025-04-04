@@ -1,6 +1,5 @@
 import {
   LinkStyled,
-  LogoWrapper,
   MenuWrapper,
   NavBarStyled,
   NavBarWrapper,
@@ -9,6 +8,7 @@ import { $menuItems, $routesOpenState } from "../model.ts";
 import { useUnit } from "effector-react";
 import { Link } from "../../../shared/ui/Link";
 import { mainPageRoute } from "../../../shared/routes";
+import Logo from "../../../shared/assets/logo.svg?react";
 
 export const NavBar = () => {
   const routesOpenState = useUnit($routesOpenState);
@@ -18,7 +18,7 @@ export const NavBar = () => {
     <NavBarWrapper>
       <NavBarStyled>
         <Link to={mainPageRoute}>
-          <LogoWrapper src={"/assets/logo.svg"} />
+          <Logo />
         </Link>
         <MenuWrapper>
           {menuItems.length &&

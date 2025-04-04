@@ -2,13 +2,15 @@ import {
   AdvantagesWrapper,
   BlocksWrapper,
   Box,
-  Image,
   ImageAndText,
   TextTitle,
   TextWrapper,
   Title,
   TitleWrapper,
 } from "./styled";
+import Arrow from "../../shared/assets/arrow.svg?react";
+import Settings from "../../shared/assets/settings.svg?react";
+import People from "../../shared/assets/people.svg?react";
 
 export const Advantages = () => (
   <AdvantagesWrapper>
@@ -17,7 +19,7 @@ export const Advantages = () => (
     </TitleWrapper>
     <BlocksWrapper>
       <ImageAndText>
-        <Image src={"/assets/arrow.svg"} alt="arrow" />
+        <Arrow />
         <TextWrapper>
           <TextTitle>Высокое качество</TextTitle>
           Мы используем современные материалы и передовые технологии на всех
@@ -26,7 +28,7 @@ export const Advantages = () => (
       </ImageAndText>
       <Box>
         <ImageAndText>
-          <Image src={"/assets/settings.svg"} alt="settings" />
+          <Settings />
           <TextWrapper>
             <TextTitle>Надежность</TextTitle>
             Наши устройства проходят строгие испытания, что гарантирует их
@@ -35,7 +37,7 @@ export const Advantages = () => (
         </ImageAndText>
       </Box>
       <ImageAndText>
-        <Image src={"/assets/people.svg"} alt="people" />
+        <People />
         <TextWrapper>
           <TextTitle>Индивидуальный подход</TextTitle>
           Мы предлагаем решения, адаптированные под уникальные потребности

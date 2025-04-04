@@ -2,7 +2,6 @@ import {
   Column,
   Flex,
   FooterWrapper,
-  Icon,
   IconsWrapper,
   IconWrapper,
   ImageWrapper,
@@ -13,13 +12,16 @@ import {
   Title,
   Warning,
 } from "./styled";
-import { LogoWrapper } from "../../../widgets/navigationBar/ui/styled";
+import Logo from "../../../shared/assets/logo.svg?react";
+import Vk from "../../../shared/assets/vk.svg?react";
+import Tg from "../../../shared/assets/tg.svg?react";
+import Wassap from "../../../shared/assets/wassap.svg?react";
 
 export const Footer = () => (
   <>
     <FooterWrapper>
       <ImageWrapper>
-        <LogoWrapper src={"assets/logo.svg"} />
+        <Logo />
       </ImageWrapper>
       <Flex>
         <TextWrapper>
@@ -52,13 +54,13 @@ export const Footer = () => (
       </Flex>
       <IconsWrapper>
         <IconWrapper>
-          <Icon src={"/assets/tg.svg"} />
+          <Tg />
         </IconWrapper>
         <IconWrapper>
-          <Icon src={"/assets/wassap.svg"} />
+          <Wassap />
         </IconWrapper>
         <IconWrapper>
-          <Icon src={"/assets/vk.svg"} />
+          <Vk />
         </IconWrapper>
       </IconsWrapper>
     </FooterWrapper>

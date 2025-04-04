@@ -3,12 +3,13 @@ import {
   Column,
   HeaderWrapper,
   IconsAndButton,
-  IconWrapper,
   Label,
   NumberAndAddress,
   RootStyled,
 } from "./styled.ts";
 import { Button } from "../../Button.tsx";
+import Like from "../../../assets/like.svg?react";
+import Phone from "../../../assets/phone.svg?react";
 
 export const Header = () => {
   return (
@@ -22,8 +23,8 @@ export const Header = () => {
           <Label>+7 (3452) 47-25-86</Label>
         </NumberAndAddress>
         <IconsAndButton>
-          <IconWrapper src={"/assets/like.svg"} />
-          <IconWrapper src={"/assets/phone.svg"} />
+          <Like />
+          <Phone />
           <Button>ЗАКАЗАТЬ ЗВОНОК</Button>
         </IconsAndButton>
       </HeaderWrapper>

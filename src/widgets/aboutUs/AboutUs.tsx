@@ -15,6 +15,10 @@ import {
 } from "./styled";
 import { Link } from "../../shared/ui/Link";
 import { newsPageRoute } from "../../shared/routes";
+import Tehnik from "../../shared/assets/tehnik.jpg";
+import Tehnik2 from "../../shared/assets/tehnik2.jpg";
+import News from "../../shared/assets/news.jpg";
+import Fire from "../../shared/assets/fire.svg?react";
 
 export const AboutUs = () => (
   <AboutUsWrapper>
@@ -30,10 +34,10 @@ export const AboutUs = () => (
               отрасли в высококачественных и надежных машинах.
             </Paragraph>
           </TextWrapper>
-          <Image src={"/assets/tehnik.jpg"} />
+          <Image src={Tehnik} />
         </BlockWrapper>
         <BlockWrapper>
-          <Image src={"/assets/tehnik2.jpg"} />
+          <Image src={Tehnik2} />
           <TextWrapper>
             <Title>Наша миссия</Title>
             <Paragraph>
@@ -46,10 +50,10 @@ export const AboutUs = () => (
         </BlockWrapper>
       </InfoWrapper>
       <NewsWrapper>
-        <NewsImage src={"/assets/news.jpg"} />
+        <NewsImage src={News} />
         <Link to={newsPageRoute}>
           <NewsButton>
-            <img src={"/assets/fire.svg"} />
+            <Fire />
             Новости
           </NewsButton>
         </Link>

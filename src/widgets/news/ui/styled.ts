@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { theme } from "../../../shared/styles/theme";
+import Photo from "../../../shared/assets/photo.jpg";
 
 export const CompanyNews = styled.div`
   width: 100%;
@@ -8,7 +9,7 @@ export const CompanyNews = styled.div`
   background-position: left bottom;
   border-radius: 30px;
   background-image:
-    linear-gradient(to bottom, #2669d799, #2669d799), url("/assets/photo.jpg");
+    linear-gradient(to bottom, #2669d799, #2669d799), url(${Photo});
   display: flex;
   align-items: center;
   justify-content: center;
