@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-
+import { createGlobalStyle } from "styled-components";
+import { theme } from "./theme";
 
 export const GlobalStyle = createGlobalStyle`
     html, body, div, span, applet, object, iframe,
@@ -20,6 +20,7 @@ export const GlobalStyle = createGlobalStyle`
         border: 0;
         font-size: 100%;
         vertical-align: baseline;
+        text-decoration: none;
     }
 
     /* HTML5 display-role reset for older browsers */
@@ -27,11 +28,11 @@ export const GlobalStyle = createGlobalStyle`
     footer, header, hgroup, menu, nav, section {
         display: block;
     }
-    
+
     html {
         height: 100vh;
     }
-    
+
     body {
         line-height: 1;
         height: 100vh;
@@ -59,5 +60,21 @@ export const GlobalStyle = createGlobalStyle`
     * {
         box-sizing: border-box;
         font-family: "Qanelas", sans-serif;
-        
-    }`;
+
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: ${theme.colors.blue800};
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: ${theme.colors.gray300};
+        border-radius: 10px;
+    }
+`;
