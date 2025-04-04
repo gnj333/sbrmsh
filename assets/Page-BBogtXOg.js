@@ -1,4 +1,4 @@
-import{d as t,t as s,B as d,r as i,j as e,L as j,n as m,h as w,c as u,a as v}from"./index-BPh3O3Af.js";const b=t.div``,l=t.img`
+import{d as t,t as s,B as d,r as i,j as e,L as j,n as m,h as w,c as u,a as v}from"./index-CvJ89Rbl.js";const b=t.div``,l=t.img`
     width: 96px;
     height: 267px;`,y=t.div`
 display: flex;
