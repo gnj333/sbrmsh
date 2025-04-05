@@ -5,10 +5,15 @@ export const PageWrapper = styled.div`
   flex-direction: row;
 `;
 
-export const ContentWrapper = styled.div`
+export const HeaderAndContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+`;
+
+export const ContentWrapper = styled.div`
+  padding-top: 23px;
+  padding-bottom: 23px;
 `;
 
 export const Column = styled.div`

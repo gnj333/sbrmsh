@@ -4,17 +4,17 @@ import { theme } from "../../shared/styles/theme";
 export const NewsItemWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 428px;
+  width: 419px;
   border: 2px solid black;
   padding-bottom: 40px;
   border-radius: 32px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
+  height: 100%;
 
   &:hover {
-    border: 3px solid blue;
-    transform: scale(1.05);
+    border: 2px solid blue;
   }
 `;
 

@@ -10,7 +10,7 @@ export const theme = {
     purewhite: "#FAFAFA",
     blue: "#2669D7",
     blue800: "#2E51FA",
-    gray300: "#d9d9d9",
+    gray300: "#ebf0f0",
   },
   space: ["0", "2px", "4px", "8px", "12px", "16px", "24px", "32px"],
   fontSizes: {

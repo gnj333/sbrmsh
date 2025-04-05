@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import { theme } from "../../shared/styles/theme.ts";
 
-export const MainInfoWrapper = styled.div`
-  margin-top: 23px;
-`;
+export const MainInfoWrapper = styled.div``;
 
 export const ControllersPicture = styled.img`
   width: 96px;

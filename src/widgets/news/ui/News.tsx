@@ -4,6 +4,7 @@ import {
   CompanyNews,
   CompanyNewsWrapper,
   NewsItemsWrapper,
+  NewsWrapper,
   Title,
 } from "./styled";
 import { NewsItem } from "../../../entities/newsItem/NewsItem";
@@ -15,7 +16,7 @@ export const News = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
   return (
-    <>
+    <NewsWrapper>
       <CompanyNewsWrapper>
         <CompanyNews>
           <Title>Новости компании</Title>
@@ -24,6 +25,6 @@ export const News = () => {
       <NewsItemsWrapper>
         {news?.map((item, i) => <NewsItem item={item} key={i} />)}
       </NewsItemsWrapper>
-    </>
+    </NewsWrapper>
   );
 };

@@ -5,21 +5,18 @@ export const NavBarStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: ${theme.borderRadius};
+  border-radius: 24px;
   background-color: ${theme.colors.purewhite};
   padding: 30px;
   margin: 0 24px 24px;
-`;
-
-export const NavBarWrapper = styled.div`
-  width: 355px;
-  height: 100vh;
+  background-color: ${theme.colors.gray300};
+  box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.07);
   position: sticky;
   z-index: 10;
-  top: 0;
+  top: 30px;
+  width: 355px;
+  height: fit-content;
 `;
-
-export const LogoWrapper = styled.img``;
 
 export const MenuWrapper = styled.div`
   display: flex;

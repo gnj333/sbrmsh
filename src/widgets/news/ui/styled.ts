@@ -15,6 +15,10 @@ export const CompanyNews = styled.div`
   justify-content: center;
 `;
 
+export const NewsWrapper = styled.div`
+  height: 100vh;
+`;
+
 export const CompanyNewsWrapper = styled.div`
   background: linear-gradient(to bottom, #2669d799);
 `;
@@ -29,4 +33,5 @@ export const NewsItemsWrapper = styled.div`
   gap: 30px;
   flex-wrap: wrap;
   margin-top: 55px;
+  height: auto;
 `;

@@ -25,14 +25,11 @@ export const HeaderWrapper = styled.div`
   position: sticky;
   top: 0;
   z-index: 10;
-  padding: 30px 50px 30px 50px;
-  background-color: white;
-`;
-
-export const NumberAndAddress = styled.div`
-  display: flex;
-  gap: 40px;
-  align-items: center;
+  padding: 30px 50px;
+  background-color: ${theme.colors.gray300};
+  border-radius: 24px;
+  box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.07);
+  margin-top: 30px;
 `;
 
 export const IconsAndButton = styled.div`
@@ -44,30 +41,24 @@ export const IconsAndButton = styled.div`
   align-items: center;
 `;
 
-export const IconWrapper = styled.img`
+export const IconWrapper = styled.div`
   cursor: pointer;
   width: 28px;
   height: 28px;
-  transition: filter 0.3s ease;
+  transition: 0.3s ease-in-out;
 
   &:hover {
-    filter: brightness(0) saturate(100%) invert(27%) sepia(99%) saturate(749%)
-      hue-rotate(195deg);
+    filter: brightness(0) saturate(100%) invert(38%) sepia(98%) saturate(749%)
+      hue-rotate(202deg) brightness(98%) contrast(300%);
   }
 `;
 
 export const Label = styled.p`
-  font-size: 20px;
-  font-weight: ${theme.fontWeights.bold};
-`;
-
-export const Address = styled.p`
   font-size: 20px;
 `;
 
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  width: 250px;
-  gap: 8px;
+  gap: 14px;
 `;

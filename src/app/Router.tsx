@@ -3,7 +3,7 @@ import { router, RoutesView } from "../pages";
 import { Suspense } from "react";
 
 export default () => (
-  <Suspense fallback={<div>sbrmsh</div>}>
+  <Suspense fallback={<div></div>}>
     <RouterProvider router={router}>
       <RoutesView />
     </RouterProvider>

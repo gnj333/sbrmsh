@@ -1,5 +1,12 @@
 import { MainPage } from "./mainPage";
-import { mainPageRoute, newPageRoute, newsPageRoute } from "../shared/routes";
+import {
+  mainPageRoute,
+  newPageRoute,
+  newsPageRoute,
+  routeFromFooterToAboutUs,
+  routeFromFooterToNews,
+  routeFromFooterToVacancies,
+} from "../shared/routes";
 import { createHistoryRouter, createRouterControls } from "atomic-router";
 import { createBrowserHistory } from "history";
 import { createRoutesView } from "atomic-router-react";
@@ -24,7 +31,7 @@ const routes = [
   },
   {
     view: NewsPage.view,
-    route: [newsPageRoute, routeFromSidebarToNews],
+    route: [newsPageRoute, routeFromSidebarToNews, routeFromFooterToNews],
     path: "/news",
   },
   {
@@ -39,7 +46,7 @@ const routes = [
   },
   {
     view: FallbackPage,
-    route: routeFromSidebarToCareer,
+    route: [routeFromSidebarToCareer, routeFromFooterToVacancies],
     path: "/career",
   },
   {
@@ -49,7 +56,7 @@ const routes = [
   },
   {
     view: FallbackPage,
-    route: routeFromSidebarToAboutUs,
+    route: [routeFromSidebarToAboutUs, routeFromFooterToAboutUs],
     path: "/aboutUs",
   },
   {

@@ -3,8 +3,9 @@ import { theme } from "../../styles/theme";
 
 export const FooterWrapper = styled.div`
   display: flex;
-  padding: 58px 0 58px 0;
+  padding: 15px 0 58px 0;
   position: relative;
+  margin-left: 24px;
 `;
 
 export const ImageWrapper = styled.div`

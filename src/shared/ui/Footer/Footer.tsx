@@ -16,6 +16,12 @@ import Logo from "../../../shared/assets/logo.svg?react";
 import Vk from "../../../shared/assets/vk.svg?react";
 import Tg from "../../../shared/assets/tg.svg?react";
 import Wassap from "../../../shared/assets/wassap.svg?react";
+import {
+  routeFromFooterToAboutUs,
+  routeFromFooterToNews,
+  routeFromFooterToVacancies,
+} from "../../routes";
+import { Link as RouterLink } from "../Link";
 
 export const Footer = () => (
   <>
@@ -36,9 +42,15 @@ export const Footer = () => (
         <TextWrapper>
           <Title>О КОМПАНИИ</Title>
           <ParagraphsWrapper>
-            <Paragraph>О нас</Paragraph>
-            <Paragraph>Новости</Paragraph>
-            <Paragraph>Вакансии</Paragraph>
+            <RouterLink to={routeFromFooterToAboutUs}>
+              <Paragraph>О нас</Paragraph>
+            </RouterLink>
+            <RouterLink to={routeFromFooterToNews}>
+              <Paragraph>Новости</Paragraph>
+            </RouterLink>
+            <RouterLink to={routeFromFooterToVacancies}>
+              <Paragraph>Вакансии</Paragraph>
+            </RouterLink>
           </ParagraphsWrapper>
         </TextWrapper>
         <TextWrapper>

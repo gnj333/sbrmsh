@@ -1,10 +1,9 @@
 import {
-  Address,
   Column,
   HeaderWrapper,
   IconsAndButton,
+  IconWrapper,
   Label,
-  NumberAndAddress,
   RootStyled,
 } from "./styled.ts";
 import { Button } from "../../Button.tsx";
@@ -15,16 +14,17 @@ export const Header = () => {
   return (
     <RootStyled>
       <HeaderWrapper>
-        <NumberAndAddress>
-          <Column>
-            <Label>ООО НПП «СибБурМаш»</Label>
-            <Address>625031, г. Тюмень ул. Ветеранов труда, 58А</Address>
-          </Column>
-          <Label>+7 (3452) 47-25-86</Label>
-        </NumberAndAddress>
+        <Column>
+          <Label>9:00 - 18:00</Label>
+          <Label>г. Тюмень ул. Ветеранов труда, 58А</Label>
+        </Column>
         <IconsAndButton>
-          <Like />
-          <Phone />
+          <IconWrapper>
+            <Like />
+          </IconWrapper>
+          <IconWrapper>
+            <Phone />
+          </IconWrapper>
           <Button>ЗАКАЗАТЬ ЗВОНОК</Button>
         </IconsAndButton>
       </HeaderWrapper>
