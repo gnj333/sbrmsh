@@ -1,6 +1,4 @@
-import{d as t,t as s,B as d,r as i,j as e,L as j,n as m,h as w,c as u,a as v}from"./index-DAaTJSfC.js";const b=t.div`
-  margin-top: 23px;
-`,l=t.img`
+import{d as t,t as s,B as d,r as i,j as e,L as j,n as m,h as w,c as u,a as v}from"./index-xoElfpZq.js";const b=t.div``,l=t.img`
   width: 96px;
   height: 267px;
 `,y=t.div`
