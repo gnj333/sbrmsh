@@ -65,17 +65,6 @@ export const NewsButton = styled(Button)`
   justify-content: center;
 `;
 
-export const Date = styled.div`
-  display: flex;
-  align-items: center;
-  border-radius: 6px;
-  background: ${theme.colors.blue};
-  width: 104px;
-  height: 30px;
-  justify-content: center;
-  font-size: 16px;
-`;
-
 export const DateAndNew = styled.div`
   display: flex;
   flex-direction: column;

@@ -3,9 +3,13 @@ import { theme } from "../../styles/theme";
 
 export const FooterWrapper = styled.div`
   display: flex;
-  padding: 15px 0 58px 0;
+  padding: 50px 84px 58px 84px;
   position: relative;
   margin-left: 24px;
+  background-color: ${theme.colors.gray300};
+  border-radius: 24px;
+  box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.07);
+  align-items: center;
 `;
 
 export const ImageWrapper = styled.div`
@@ -72,8 +76,8 @@ export const IconsWrapper = styled.div`
   display: flex;
   gap: 15px;
   position: absolute;
-  right: 0;
-  top: 50%;
+  right: 84px;
+  top: 40%;
 `;
 
 export const Warning = styled.div`

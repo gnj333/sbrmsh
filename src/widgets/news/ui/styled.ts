@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { theme } from "../../../shared/styles/theme";
-import Photo from "../../../shared/assets/photo.jpg";
+import Photo from "../../../shared/assets/photo.png";
 
 export const CompanyNews = styled.div`
   width: 100%;
@@ -9,7 +9,12 @@ export const CompanyNews = styled.div`
   background-position: left bottom;
   border-radius: 30px;
   background-image:
-    linear-gradient(to bottom, #2669d799, #2669d799), url(${Photo});
+    linear-gradient(
+      to bottom,
+      rgba(38, 105, 215, 0.6),
+      rgba(38, 105, 215, 0.6)
+    ),
+    url(${Photo});
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,10 +22,6 @@ export const CompanyNews = styled.div`
 
 export const NewsWrapper = styled.div`
   height: 100vh;
-`;
-
-export const CompanyNewsWrapper = styled.div`
-  background: linear-gradient(to bottom, #2669d799);
 `;
 
 export const Title = styled.h1`

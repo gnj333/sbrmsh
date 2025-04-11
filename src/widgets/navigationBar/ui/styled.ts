@@ -8,7 +8,7 @@ export const NavBarStyled = styled.div`
   border-radius: 24px;
   background-color: ${theme.colors.purewhite};
   padding: 30px;
-  margin: 0 24px 24px;
+  margin: 30px 24px 24px;
   background-color: ${theme.colors.gray300};
   box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.07);
   position: sticky;

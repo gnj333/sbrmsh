@@ -1,7 +1,7 @@
 import { Layout } from "../../../shared/ui/Layout/Layout";
 import { MainInfo } from "../../../widgets/mainInfo/MainInfo";
 
-export default () => (
+export const MainPage = () => (
   <Layout>
     <MainInfo />
   </Layout>

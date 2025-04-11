@@ -4,7 +4,7 @@ export const mainPageRoute = createRoute();
 
 export const newsPageRoute = createRoute();
 
-export const newPageRoute = createRoute<{ id: number }>();
+export const newPageRoute = createRoute<{ id: string }>();
 
 export const routeFromFooterToNews = createRoute();
 

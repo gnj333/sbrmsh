@@ -13,7 +13,7 @@ export const HeaderAndContentWrapper = styled.div`
 
 export const ContentWrapper = styled.div`
   padding-top: 23px;
-  padding-bottom: 23px;
+  padding-bottom: 50px;
 `;
 
 export const Column = styled.div`

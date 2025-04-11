@@ -2,7 +2,6 @@ import {
   AboutUsWrapper,
   BlocksWithNews,
   BlockWrapper,
-  Date,
   DateAndNew,
   Image,
   InfoWrapper,
@@ -19,6 +18,7 @@ import Tehnik from "../../shared/assets/tehnik.jpg";
 import Tehnik2 from "../../shared/assets/tehnik2.jpg";
 import News from "../../shared/assets/news.jpg";
 import Fire from "../../shared/assets/fire.svg?react";
+import { Date } from "../../shared/ui/styled";
 
 export const AboutUs = () => (
   <AboutUsWrapper>

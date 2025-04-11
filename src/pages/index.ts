@@ -22,15 +22,17 @@ import {
 } from "../widgets/navigationBar/model";
 import { NewsPage } from "./news";
 import { FallbackPage } from "../shared/ui/Fallback";
+import { CareerPage } from "./career";
+import { NewPage } from "./new";
 
 const routes = [
   {
-    view: MainPage.view,
+    view: MainPage,
     route: [mainPageRoute, routeFromSidebarToMain],
     path: "/",
   },
   {
-    view: NewsPage.view,
+    view: NewsPage,
     route: [newsPageRoute, routeFromSidebarToNews, routeFromFooterToNews],
     path: "/news",
   },
@@ -45,7 +47,7 @@ const routes = [
     path: "/products",
   },
   {
-    view: FallbackPage,
+    view: CareerPage,
     route: [routeFromSidebarToCareer, routeFromFooterToVacancies],
     path: "/career",
   },
@@ -60,7 +62,7 @@ const routes = [
     path: "/aboutUs",
   },
   {
-    view: FallbackPage,
+    view: NewPage,
     route: newPageRoute,
     path: "/news/:id",
   },
